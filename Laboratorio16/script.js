@@ -1,6 +1,4 @@
-// script.js - Soluciones a los ejercicios
-// Colaboración: IA (asistente) y alumno
-// Cada bloque está comentado con el número de ejercicio correspondiente
+
 
 /* Ejercicio 3: Cambiar contenido dinámicamente */
 const btn3 = document.getElementById('btn3');
