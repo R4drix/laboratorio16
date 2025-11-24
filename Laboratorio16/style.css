@@ -1,0 +1,18 @@
+/* style.css - Estilos básicos y animaciones */
+body { font-family: system-ui, Arial; margin: 16px; background: #f5f5f5; color: #222; }
+header { margin-bottom: 12px; }
+section { background: #fff; padding: 12px; margin-bottom: 12px; border-radius: 8px; box-shadow: 0 1px 4px rgba(0,0,0,0.06); }
+button { margin: 6px 4px; padding: 6px 10px; border-radius: 6px; border: 1px solid #ccc; background: #fff; cursor: pointer; }
+.oscuro { background: #111; color: #eee; }
+.contador { display:flex; align-items:center; gap:10px; }
+.contador button { width:36px; height:36px; }
+.error { color: #b00; }
+ul { list-style: disc; margin-left: 20px; }
+.img-grande { width: 400px; height: 300px; background: #ddd; display:flex; align-items:center; justify-content:center; margin-bottom:8px; }
+.miniaturas img { cursor: pointer; margin-right:6px; border: 2px solid transparent; }
+.miniaturas img:hover { border-color: #666; }
+.caja { width:80px; height:80px; background: teal; margin: 12px 0; transition: transform 0.6s ease; }
+.caja.mover { transform: translateX(300px); }
+table { width:100%; border-collapse: collapse; margin-top:8px; }
+th, td { border: 1px solid #ddd; padding:6px; text-align:left; }
+.completed { color: green; font-weight: bold; }

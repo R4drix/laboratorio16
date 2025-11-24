@@ -1,0 +1,176 @@
+<!doctype html>
+<!-- Laboratorio 16 - Soluciones (index.html) -->
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Laboratorio16 - Soluciones</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Laboratorio 16 - JavaScript: Eventos y JSON (Soluciones)</h1>
+    <p>Autor: Nombre del alumno (colaboró: IA)</p>
+  </header>
+
+  <main>
+    <!-- Cada sección corresponde a un ejercicio. Usa los botones para interactuar. -->
+    <section id="ej3">
+      <h2>Ejercicio 3: Cambiar texto al presionar botón</h2>
+      <p id="texto3">Texto original</p>
+      <button id="btn3">Cambiar texto</button>
+    </section>
+
+    <section id="ej4">
+      <h2>Ejercicio 4: Alternar texto con cada click</h2>
+      <p id="texto4">Texto original</p>
+      <button id="btn4">Alternar texto</button>
+    </section>
+
+    <section id="ej5">
+      <h2>Ejercicio 5: Modo oscuro (activar/desactivar clase "oscuro")</h2>
+      <button id="btn5">Toggle Modo Oscuro</button>
+    </section>
+
+    <section id="ej6">
+      <h2>Ejercicio 6: Contador interactivo</h2>
+      <div class="contador">
+        <button id="dec">−</button>
+        <span id="valor">0</span>
+        <button id="inc">+</button>
+      </div>
+      <p id="msg6" class="error"></p>
+    </section>
+
+    <section id="ej7">
+      <h2>Ejercicio 7: Agregar y eliminar elementos de lista</h2>
+      <input id="input7" placeholder="Texto a añadir" />
+      <button id="add7">Añadir</button>
+      <button id="del7">Borrar último</button>
+      <ul id="lista7"></ul>
+    </section>
+
+    <section id="ej8">
+      <h2>Ejercicio 8: Validar formulario (nombre y correo)</h2>
+      <form id="form8">
+        <label>Nombre: <input id="nombre8" /></label><br/>
+        <label>Correo: <input id="correo8" /></label><br/>
+        <button type="submit">Enviar</button>
+      </form>
+      <div id="errores8"></div>
+    </section>
+
+    <section id="ej9">
+      <h2>Ejercicio 9: Galería con miniaturas</h2>
+      <div id="grande" class="img-grande">Imagen grande</div>
+      <div class="miniaturas">
+        <img src="https://via.placeholder.com/80x60?text=1" data-src="https://via.placeholder.com/400x300?text=1" alt="1"/>
+        <img src="https://via.placeholder.com/80x60?text=2" data-src="https://via.placeholder.com/400x300?text=2" alt="2"/>
+        <img src="https://via.placeholder.com/80x60?text=3" data-src="https://via.placeholder.com/400x300?text=3" alt="3"/>
+      </div>
+    </section>
+
+    <section id="ej10">
+      <h2>Ejercicio 10: Tabla dinámica desde JavaScript</h2>
+      <button id="btn10">Generar tabla</button>
+      <div id="tabla10"></div>
+    </section>
+
+    <section id="ej11">
+      <h2>Ejercicio 11: Delegación de eventos (eliminar &lt;li&gt; al clic)</h2>
+      <ul id="ul11">
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+      </ul>
+      <p>Haga clic en un elemento para eliminarlo.</p>
+    </section>
+
+    <section id="ej12">
+      <h2>Ejercicio 12: Animación con DOM y CSS</h2>
+      <div id="caja12" class="caja"></div>
+      <button id="mover12">Mover</button>
+      <button id="reset12">Reiniciar</button>
+    </section>
+
+    <section id="ej13">
+      <h2>Ejercicio 13: CRUD básico (usuarios)</h2>
+      <form id="form13">
+        <input id="nombre13" placeholder="Nombre" required />
+        <input id="edad13" type="number" placeholder="Edad" required />
+        <button type="submit">Agregar/Guardar</button>
+      </form>
+      <table id="tabla13">
+        <thead><tr><th>Nombre</th><th>Edad</th><th>Acciones</th></tr></thead>
+        <tbody></tbody>
+      </table>
+    </section>
+
+    <section id="ej14">
+      <h2>Ejercicio 14: Object -> JSON</h2>
+      <button id="btn14">Mostrar en consola (JSON)</button>
+    </section>
+
+    <section id="ej15">
+      <h2>Ejercicio 15: JSON.parse y mostrar en DOM</h2>
+      <p id="p15"></p>
+      <button id="btn15">Parsear y mostrar</button>
+    </section>
+
+    <section id="ej16">
+      <h2>Ejercicio 16: Array de objetos productos -> JSON -> listar</h2>
+      <button id="btn16">Generar lista</button>
+      <ul id="ul16"></ul>
+    </section>
+
+    <section id="ej17">
+      <h2>Ejercicio 17: Guardar objeto JSON en localStorage y recuperarlo</h2>
+      <button id="save17">Guardar</button>
+      <button id="load17">Cargar y mostrar</button>
+      <pre id="out17"></pre>
+    </section>
+
+    <section id="ej18">
+      <h2>Ejercicio 18: JSON lista de libros -> tabla</h2>
+      <button id="btn18">Generar tabla</button>
+      <div id="tabla18"></div>
+    </section>
+
+    <section id="ej19">
+      <h2>Ejercicio 19: Convertir JSON, modificar y volver a JSON</h2>
+      <button id="btn19">Modificar y mostrar</button>
+      <pre id="out19"></pre>
+    </section>
+
+    <section id="ej20">
+      <h2>Ejercicio 20: Guardar input (nombre) como JSON y mostrar en consola</h2>
+      <input id="nombre20" placeholder="Tu nombre" />
+      <button id="btn20">Guardar y console.log</button>
+    </section>
+
+    <section id="ej21">
+      <h2>Ejercicio 21: Lista de tareas (estado) desde JSON</h2>
+      <button id="btn21">Generar tareas</button>
+      <ul id="ul21"></ul>
+    </section>
+
+    <section id="ej22">
+      <h2>Ejercicio 22: Simulador de perfil (guardar en localStorage y persistir)</h2>
+      <form id="form22">
+        <input id="nombre22" placeholder="Nombre" required />
+        <input id="edad22" type="number" placeholder="Edad" required />
+        <input id="pais22" placeholder="País" required />
+        <button type="submit">Guardar perfil</button>
+      </form>
+      <div id="perfil22"></div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Carpeta del laboratorio: Laboratorio16 - (colaboró IA)</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
